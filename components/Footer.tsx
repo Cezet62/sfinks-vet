@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-10 border-t border-slate-800 text-center text-xs text-slate-500">
-          <p>© 2025 Gabinet Weterynaryjny "Sfinks" Osielsko. Wszystkie prawa zastrzeżone.</p>
+          <p>© 2025 Gabinet Weterynaryjny "Sfinks" Osielsko. Wszystkie prawa zastrzeżone. | Strona z AI</p>
         </div>
       </div>
     </footer>
