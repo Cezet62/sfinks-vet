@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight mb-8">
-            Twoj pupil <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-sky-600">w najlepszych rekach.</span>
+            Twój pupil <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-sky-600">w najlepszych rękach.</span>
           </h1>
           
           <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
               Umów Wizytę Online
             </button>
             <a href="#zespol" className="w-full sm:w-auto px-10 py-4 bg-white text-slate-700 font-bold rounded-2xl border border-slate-200 hover:bg-slate-50 transition-all shadow-md text-center">
-              Poznaj Nasz Zespol
+              Poznaj Nasz Zespół
             </a>
           </div>
           

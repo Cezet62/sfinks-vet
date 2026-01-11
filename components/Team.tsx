@@ -20,7 +20,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "Natalia Czerkas-Dobkowska",
     title: "lek. wet.",
-    role: "Zalozycielka i wlascicielka",
+    role: "Założycielka i właścicielka",
     description: "",
     image: "/images/team/natalia.jpg",
     isOwner: true
@@ -83,12 +83,12 @@ const Team: React.FC = () => {
     <section id="zespol" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-3">Nasz Zespol</p>
+          <p className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-3">Nasz Zespół</p>
           <h2 className="text-4xl font-extrabold text-slate-900 sm:text-5xl">
             Poznaj nas
           </h2>
           <p className="mt-4 text-slate-600 max-w-2xl mx-auto text-lg">
-            Zespol doswiadczonych specjalistow, ktorzy z pasja dbaja o zdrowie Twoich pupili.
+            Zespół doświadczonych specjalistów, którzy z pasją dbają o zdrowie Twoich pupili.
           </p>
         </div>
 
@@ -128,18 +128,18 @@ const Team: React.FC = () => {
 
                 <div className="space-y-4 text-slate-600 leading-relaxed mb-8">
                   <p>
-                    W <strong className="text-slate-800">2003 roku</strong> ukonczylam Wydzial Medycyny Weterynaryjnej
-                    Uniwersytetu Warminsko-Mazurskiego w Olsztynie. Przez siedem lat pracowalam w Suwalkach,
-                    leczac konie i zwierzeta towarzyszace, nastepnie w Przychodni Wyzyny w Bydgoszczy.
+                    W <strong className="text-slate-800">2003 roku</strong> ukończyłam Wydział Medycyny Weterynaryjnej
+                    Uniwersytetu Warmińsko-Mazurskiego w Olsztynie. Przez siedem lat pracowałam w Suwałkach,
+                    lecząc konie i zwierzęta towarzyszące, następnie w Przychodni Wyżyny w Bydgoszczy.
                   </p>
                   <p>
-                    W <strong className="text-slate-800">2011 roku</strong> spelnilam marzenie i otworzyłam
-                    wlasny gabinet w Osielsku. Nazwa "Sfinks" pochodzi od mojego chartu perskiego,
-                    ktory zainspirowal mnie do zostania weterynarzem gdy mialam 16 lat.
+                    W <strong className="text-slate-800">2011 roku</strong> spełniłam marzenie i otworzyłam
+                    własny gabinet w Osielsku. Nazwa "Sfinks" pochodzi od mojego chartu perskiego,
+                    który zainspirował mnie do zostania weterynarzem gdy miałam 16 lat.
                   </p>
                   <p>
-                    Od ponad <strong className="text-slate-800">10 lat</strong> intensywnie szkole sie
-                    w dermatologii weterynaryjnej - mojej najwiekszej pasji zawodowej.
+                    Od ponad <strong className="text-slate-800">10 lat</strong> intensywnie szkolę się
+                    w dermatologii weterynaryjnej - mojej największej pasji zawodowej.
                   </p>
                 </div>
 
@@ -147,7 +147,7 @@ const Team: React.FC = () => {
                 <div className="bg-gradient-to-r from-emerald-50 to-sky-50 rounded-2xl p-6 mb-8">
                   <p className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">Specjalizacja</p>
                   <p className="text-xl font-bold text-slate-900">Dermatologia i alergologia weterynaryjna</p>
-                  <p className="text-slate-600 text-sm mt-1">Choroby skory, alergie, cytologia, testy alergologiczne</p>
+                  <p className="text-slate-600 text-sm mt-1">Choroby skóry, alergie, cytologia, testy alergologiczne</p>
                 </div>
 
                 {/* Certyfikaty */}
@@ -160,7 +160,7 @@ const Team: React.FC = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-slate-900 text-sm">ESAVS Dermatology</p>
-                        <p className="text-xs text-slate-500">Kurs 3-stopniowy, Wieden</p>
+                        <p className="text-xs text-slate-500">Kurs 3-stopniowy, Wiedeń</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
@@ -168,7 +168,7 @@ const Team: React.FC = () => {
                         <span className="text-sky-600 text-lg">🏛️</span>
                       </div>
                       <div>
-                        <p className="font-semibold text-slate-900 text-sm">Czlonek ESVD</p>
+                        <p className="font-semibold text-slate-900 text-sm">Członek ESVD</p>
                         <p className="text-xs text-slate-500">European Society of Veterinary Dermatology</p>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ const Team: React.FC = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-slate-900 text-sm">UWM Olsztyn</p>
-                        <p className="text-xs text-slate-500">Wydzial Medycyny Weterynaryjnej, 2003</p>
+                        <p className="text-xs text-slate-500">Wydział Medycyny Weterynaryjnej, 2003</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
@@ -187,7 +187,7 @@ const Team: React.FC = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-slate-900 text-sm">20+ lat praktyki</p>
-                        <p className="text-xs text-slate-500">Doswiadczenie kliniczne</p>
+                        <p className="text-xs text-slate-500">Doświadczenie kliniczne</p>
                       </div>
                     </div>
                   </div>
@@ -200,7 +200,7 @@ const Team: React.FC = () => {
         {/* Reszta zespolu */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-slate-900 text-center mb-10">
-            Nasz zespol
+            Nasz zespół
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {staff.map((member, index) => (
@@ -229,10 +229,10 @@ const Team: React.FC = () => {
         {/* Wspolpracujacy lekarze */}
         <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-100">
           <h3 className="text-xl font-bold text-slate-900 text-center mb-6">
-            Lekarze z ktorymi wspolpracujemy
+            Lekarze z którymi współpracujemy
           </h3>
           <p className="text-slate-500 text-center text-sm mb-8">
-            W razie potrzeby kierujemy pacjentow do specjalistow
+            W razie potrzeby kierujemy pacjentów do specjalistów
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {collaborators.map((collab, index) => (

@@ -6,42 +6,42 @@ const services: Service[] = [
   {
     id: '1',
     title: 'Dermatologia i Alergologia',
-    description: 'Nasza specjalizacja. Diagnozujemy i leczymy choroby skory, dermatozy endokrynologiczne, choroby pasozytnicze i alergie.',
+    description: 'Nasza specjalizacja. Diagnozujemy i leczymy choroby skóry, dermatozy endokrynologiczne, choroby pasożytnicze i alergie.',
     icon: '🔬',
     color: 'bg-emerald-100 text-emerald-600',
   },
   {
     id: '2',
-    title: 'Choroby Wewnetrzne',
-    description: 'Kompleksowa diagnostyka i leczenie chorob wewnetrznych u psow, kotow i innych zwierzat towarzyszacych.',
+    title: 'Choroby Wewnętrzne',
+    description: 'Kompleksowa diagnostyka i leczenie chorób wewnętrznych u psów, kotów i innych zwierząt towarzyszących.',
     icon: '🩺',
     color: 'bg-blue-100 text-blue-600',
   },
   {
     id: '3',
     title: 'Cytologia i Diagnostyka',
-    description: 'Cytologia skory i tkanek, badanie zeskrobin, testy alergologiczne i pelna diagnostyka laboratoryjna.',
+    description: 'Cytologia skóry i tkanek, badanie zeskrobin, testy alergologiczne i pełna diagnostyka laboratoryjna.',
     icon: '🧪',
     color: 'bg-purple-100 text-purple-600',
   },
   {
     id: '4',
     title: 'Paszporty UE',
-    description: 'Wystawiamy paszporty dla psow, kotow i fretek. Wymagane czipowanie przed wyjazdem za granice.',
+    description: 'Wystawiamy paszporty dla psów, kotów i fretek. Wymagane czipowanie przed wyjazdem za granicę.',
     icon: '📘',
     color: 'bg-sky-100 text-sky-600',
   },
   {
     id: '5',
     title: 'Wizyty Domowe',
-    description: 'Oferujemy wizyty domowe po wczesniejszym umowieniu telefonicznym. Zadzwon: 665-567-626.',
+    description: 'Oferujemy wizyty domowe po wcześniejszym umówieniu telefonicznym. Zadzwoń: 665-567-626.',
     icon: '🏠',
     color: 'bg-amber-100 text-amber-600',
   },
   {
     id: '6',
-    title: 'Zwierzeta Egzotyczne',
-    description: 'Leczymy nie tylko psy i koty, ale takze gryzonie, kroliki, ptaki i gady.',
+    title: 'Zwierzęta Egzotyczne',
+    description: 'Leczymy nie tylko psy i koty, ale także gryzonie, króliki, ptaki i gady.',
     icon: '🦎',
     color: 'bg-rose-100 text-rose-600',
   },
@@ -55,7 +55,7 @@ const Services: React.FC = () => {
           <h2 className="text-emerald-600 font-bold tracking-widest text-sm uppercase mb-3">Nasze Usługi</h2>
           <h3 className="text-4xl font-extrabold text-slate-900 sm:text-5xl">Wszystko dla Twojego Pupila</h3>
           <p className="mt-4 text-slate-600 max-w-2xl mx-auto text-lg">
-            Specjalizujemy sie w dermatologii i alergologii. Leczymy psy, koty oraz zwierzeta egzotyczne.
+            Specjalizujemy się w dermatologii i alergologii. Leczymy psy, koty oraz zwierzęta egzotyczne.
           </p>
         </div>
 

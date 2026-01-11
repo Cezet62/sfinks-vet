@@ -108,7 +108,7 @@ const DiagnosticAssistant: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                   <div className="bg-emerald-500/20 backdrop-blur-md border border-white/20 p-6 rounded-3xl">
-                    <p className="text-xl font-bold mb-2">Gotowi do pomocy 24/7</p>
+                    <p className="text-xl font-bold mb-2">Zawsze służymy radą</p>
                     <p className="text-emerald-50 text-sm leading-relaxed opacity-90">
                       Wpisz objawy po lewej stronie, aby nasz inteligentny system pomógł Ci podjąć decyzję o pilności wizyty. Twoje dane są bezpieczne i służą jedynie do wstępnej oceny.
                     </p>
