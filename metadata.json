@@ -1,0 +1,8 @@
+
+{
+  "name": "Weterynarz Osielsko \"Sfinks\"",
+  "description": "Profesjonalna przychodnia weterynaryjna w Osielsku. Troskliwa opieka dla Twoich zwierząt, chirurgia, diagnostyka i asystent AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
