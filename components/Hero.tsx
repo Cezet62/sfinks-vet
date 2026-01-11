@@ -20,11 +20,11 @@ const Hero: React.FC = () => {
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight mb-8">
-            Twój pupil <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-sky-600">w najlepszych rękach.</span>
+            U nas zwierzęta są <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-sky-600">w dobrych rękach.</span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-            Gabinet Weterynaryjny <span className="font-bold text-slate-800">"Sfinks"</span> to miejsce, gdzie specjalistyczna wiedza dermatologiczna spotyka się z autentyczną troską o każde zwierzę.
+            Diagnoza to dopiero początek. Prawdziwa opieka zaczyna się od zrozumienia Twojego pupila.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
