@@ -1,5 +1,7 @@
 # Sfinks - Notatki projektu
 
+> **UWAGA DLA CLAUDE:** Masz tendencję do mylenia dat (Twoje dane treningowe kończą się w maju 2025). Zawsze sprawdzaj aktualną datę systemową przed wpisaniem roku!
+
 ## Linki
 - **Strona:** https://weterynarz-osielsko-sfinks.vercel.app
 - **GitHub:** https://github.com/Cezet62/sfinks-vet
@@ -59,4 +61,4 @@ npx vercel --prod
 - [ ] Rozważyć system rezerwacji wizyt
 
 ## Historia zmian
-- 2025-01-11: Utworzenie strony, wdrożenie na Vercel, integracja Gemini AI
+- 2026-01-11: Utworzenie strony, wdrożenie na Vercel, integracja Gemini AI
