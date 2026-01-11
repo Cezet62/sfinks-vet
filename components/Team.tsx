@@ -4,10 +4,15 @@ interface TeamMember {
   name: string;
   title: string;
   role: string;
-  specialization: string;
   description: string;
   image: string | null;
   isOwner?: boolean;
+}
+
+interface Collaborator {
+  name: string;
+  title: string;
+  specialization: string;
   external?: string;
 }
 
@@ -16,42 +21,63 @@ const teamMembers: TeamMember[] = [
     name: "Natalia Czerkas-Dobkowska",
     title: "lek. wet.",
     role: "Wlascicielka gabinetu",
-    specialization: "Dermatologia i alergologia",
-    description: "Prowadze gabinet od 2011 roku. Ukonczylam 3-stopniowy kurs ESAVS w Wiedniu i jestem czlonkiem ESVD. Specjalizuje sie w chorobach skory i alergiach u zwierzat.",
+    description: "Prowadze gabinet od 2011 roku. Ukonczylam 3-stopniowy kurs ESAVS w Wiedniu i jestem czlonkiem ESVD. Specjalizuje sie w dermatologii i alergologii weterynaryjnej.",
     image: "/images/team/natalia.jpg",
     isOwner: true
   },
   {
+    name: "Aleksandra Bloch",
+    title: "lek. wet.",
+    role: "Lekarz weterynarii",
+    description: "Lekarz weterynarii w zespole gabinetu Sfinks.",
+    image: null
+  },
+  {
+    name: "Jagoda Majkowska",
+    title: "lek. wet.",
+    role: "Lekarz weterynarii",
+    description: "Lekarz weterynarii w zespole gabinetu Sfinks.",
+    image: null
+  },
+  {
+    name: "Magdalena Jasinska",
+    title: "technik wet.",
+    role: "Technik weterynarii",
+    description: "Wspiera lekarzy w codziennej pracy z pacjentami.",
+    image: null
+  },
+  {
+    name: "Sandra Bielska",
+    title: "",
+    role: "Recepcja",
+    description: "Pierwszy kontakt z klinika. Pomaga w umawianiu wizyt i odpowiada na pytania.",
+    image: null
+  }
+];
+
+const collaborators: Collaborator[] = [
+  {
     name: "Agnieszka Pancerz",
     title: "lek. wet.",
-    role: "Lekarz wspolpracujacy",
     specialization: "Medycyna behawioralna",
-    description: "Specjalistka od terapii behawioralnej psow i kotow. Certyfikowany behawiorysta WET-BEHAWIOR.",
-    image: null,
     external: "WET-BEHAWIOR"
   },
   {
     name: "Mateusz Werezynski",
     title: "lek. wet.",
-    role: "Lekarz wspolpracujacy",
-    specialization: "Radiologia weterynaryjna",
-    description: "Specjalista radiologii weterynaryjnej. Wykonuje badania USG, echo serca oraz zabiegi stomatologiczne.",
-    image: null
+    specialization: "Radiologia, USG, echo serca, stomatologia"
   },
   {
     name: "Bartlomiej Babinski",
     title: "lek. wet.",
-    role: "Lekarz wspolpracujacy",
-    specialization: "Chirurgia weterynaryjna",
-    description: "Specjalista chirurgii weterynaryjnej. Wykonuje zabiegi chirurgiczne oraz konsultacje ortopedyczne.",
-    image: null,
+    specialization: "Chirurgia, ortopedia",
     external: "Przychodnia wet. Przy Kladce"
   }
 ];
 
 const Team: React.FC = () => {
   const owner = teamMembers.find(m => m.isOwner);
-  const collaborators = teamMembers.filter(m => !m.isOwner);
+  const staff = teamMembers.filter(m => !m.isOwner);
 
   return (
     <section id="zespol" className="py-24 bg-slate-50">
@@ -68,10 +94,10 @@ const Team: React.FC = () => {
 
         {/* Wlascicielka - wyroznienie */}
         {owner && (
-          <div className="mb-20">
+          <div className="mb-16">
             <div className="flex flex-col lg:flex-row items-center gap-12 bg-white rounded-[2rem] p-8 lg:p-12 shadow-xl border border-slate-100">
               <div className="w-full lg:w-1/3">
-                <div className="relative group">
+                <div className="relative">
                   <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-100 to-sky-100 rounded-[2rem] opacity-50 blur-xl"></div>
                   <div className="relative rounded-[1.5rem] overflow-hidden shadow-2xl border-4 border-white">
                     <img
@@ -88,19 +114,15 @@ const Team: React.FC = () => {
                   {owner.role}
                 </div>
                 <p className="text-emerald-600 font-medium mb-1">{owner.title}</p>
-                <h3 className="text-3xl font-extrabold text-slate-900 mb-2">
+                <h3 className="text-3xl font-extrabold text-slate-900 mb-4">
                   {owner.name}
                 </h3>
-                <p className="text-lg text-emerald-600 font-semibold mb-4">
-                  {owner.specialization}
-                </p>
                 <p className="text-slate-600 leading-relaxed mb-6 text-lg">
                   {owner.description}
                 </p>
-
                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                  <span className="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">ESAVS Wiedeń</span>
-                  <span className="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Członek ESVD</span>
+                  <span className="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">ESAVS Wieden</span>
+                  <span className="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Czlonek ESVD</span>
                   <span className="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Od 2011 roku</span>
                 </div>
               </div>
@@ -108,69 +130,54 @@ const Team: React.FC = () => {
           </div>
         )}
 
-        {/* Sekcja wspolpracujacych */}
-        <div className="mb-8">
+        {/* Reszta zespolu */}
+        <div className="mb-16">
           <h3 className="text-2xl font-bold text-slate-900 text-center mb-10">
-            Lekarze z ktorymi wspolpracujemy
+            Nasz zespol
           </h3>
-        </div>
-
-        {/* Siatka wspolpracujacych */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {collaborators.map((member, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
-              <div className="mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {staff.map((member, index) => (
+              <div key={index} className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100 text-center">
                 {member.image ? (
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full aspect-square object-cover rounded-xl"
+                    className="w-24 h-24 object-cover rounded-full mx-auto mb-4 border-4 border-slate-100"
                   />
                 ) : (
-                  <div className="w-full aspect-square bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-20 h-20 bg-slate-300 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <span className="text-3xl text-slate-500">👤</span>
-                      </div>
-                      <p className="text-slate-400 text-sm">Zdjecie wkrotce</p>
-                    </div>
+                  <div className="w-24 h-24 bg-gradient-to-br from-emerald-100 to-sky-100 rounded-full mx-auto mb-4 flex items-center justify-center border-4 border-white shadow-inner">
+                    <span className="text-3xl">
+                      {member.role === 'Recepcja' ? '👩‍💼' : member.title === 'technik wet.' ? '👩‍⚕️' : '👩‍⚕️'}
+                    </span>
                   </div>
                 )}
+                {member.title && <p className="text-emerald-600 font-medium text-sm">{member.title}</p>}
+                <h4 className="text-lg font-bold text-slate-900 mb-1">{member.name}</h4>
+                <p className="text-slate-500 text-sm">{member.role}</p>
               </div>
-
-              <p className="text-emerald-600 font-medium text-sm">{member.title}</p>
-              <h4 className="text-xl font-bold text-slate-900 mb-1">{member.name}</h4>
-              <p className="text-emerald-600 font-semibold text-sm mb-3">{member.specialization}</p>
-              <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                {member.description}
-              </p>
-
-              {member.external && (
-                <div className="pt-3 border-t border-slate-100">
-                  <p className="text-xs text-slate-500">
-                    Przyjmuje rowniez: <span className="font-medium text-slate-700">{member.external}</span>
-                  </p>
-                </div>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* Asystenci */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-4 bg-white rounded-full px-8 py-4 shadow-md border border-slate-100">
-            <div className="flex -space-x-3">
-              <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center border-2 border-white">
-                <span className="text-emerald-600 text-sm">👩‍⚕️</span>
+        {/* Wspolpracujacy lekarze */}
+        <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-100">
+          <h3 className="text-xl font-bold text-slate-900 text-center mb-6">
+            Lekarze z ktorymi wspolpracujemy
+          </h3>
+          <p className="text-slate-500 text-center text-sm mb-8">
+            W razie potrzeby kierujemy pacjentow do specjalistow
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {collaborators.map((collab, index) => (
+              <div key={index} className="text-center p-4 rounded-xl bg-slate-50">
+                <p className="text-emerald-600 font-medium text-sm">{collab.title}</p>
+                <h4 className="text-lg font-bold text-slate-900">{collab.name}</h4>
+                <p className="text-slate-600 text-sm mt-1">{collab.specialization}</p>
+                {collab.external && (
+                  <p className="text-xs text-slate-400 mt-2">{collab.external}</p>
+                )}
               </div>
-              <div className="w-10 h-10 bg-sky-100 rounded-full flex items-center justify-center border-2 border-white">
-                <span className="text-sky-600 text-sm">👨‍⚕️</span>
-              </div>
-            </div>
-            <div className="text-left">
-              <p className="font-bold text-slate-900">+ 2 asystentow</p>
-              <p className="text-sm text-slate-500">Wspiera nas wykwalifikowany personel</p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
