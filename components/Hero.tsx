@@ -54,8 +54,8 @@ const Hero: React.FC = () => {
             <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-100 to-sky-100 rounded-[3rem] opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-[12px] border-white">
               <img 
-                src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=1200" 
-                alt="Badanie psa w przychodni Sfinks" 
+                src="/images/hero.jpg"
+                alt="Gabinet Weterynaryjny Sfinks w Osielsku" 
                 className="w-full h-auto object-cover aspect-[4/5] scale-105 group-hover:scale-100 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent opacity-60"></div>
