@@ -31,8 +31,8 @@ const Hero: React.FC = () => {
             <button className="w-full sm:w-auto px-10 py-4 bg-emerald-600 text-white font-bold rounded-2xl hover:bg-emerald-700 transition-all shadow-xl shadow-emerald-200/50 hover:-translate-y-1">
               Umów Wizytę Online
             </button>
-            <a href="#o-nas" className="w-full sm:w-auto px-10 py-4 bg-white text-slate-700 font-bold rounded-2xl border border-slate-200 hover:bg-slate-50 transition-all shadow-md text-center">
-              Poznaj Nasz Zespół
+            <a href="#zespol" className="w-full sm:w-auto px-10 py-4 bg-white text-slate-700 font-bold rounded-2xl border border-slate-200 hover:bg-slate-50 transition-all shadow-md text-center">
+              Poznaj Nasz Zespol
             </a>
           </div>
           

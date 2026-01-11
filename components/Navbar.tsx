@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         </div>
         
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-          <a href="#o-nas" className="hover:text-emerald-600 transition-colors">O nas</a>
+          <a href="#zespol" className="hover:text-emerald-600 transition-colors">Zespol</a>
           <a href="#services" className="hover:text-emerald-600 transition-colors">Uslugi</a>
           <a href="#ai-assistant" className="hover:text-emerald-600 transition-colors">Sprawdz Objawy</a>
           <a href="#contact" className="hover:text-emerald-600 transition-colors">Kontakt</a>
