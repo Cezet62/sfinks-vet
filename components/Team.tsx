@@ -134,7 +134,7 @@ const Team: React.FC = () => {
                   </p>
                   <p>
                     W <strong className="text-slate-800">2011 roku</strong> spełniłam marzenie i otworzyłam
-                    własny gabinet w Osielsku. Nazwa "Sfinks" pochodzi od mojego chartu perskiego,
+                    własny gabinet w Osielsku. Nazwa "Sfinks" pochodzi od mojego charta perskiego,
                     który zainspirował mnie do zostania weterynarzem gdy miałam 16 lat.
                   </p>
                   <p>
